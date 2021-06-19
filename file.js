@@ -33,7 +33,7 @@ let createCard = (i, bags) => {
 // раздача карт
 button.onclick = function() {
   const level = document.querySelector('input[name="choice"]:checked').value;
-  document.querySelector('body').innerHTML = '<div id = "main-screen" class = "main-screen"></div>';
+  document.querySelector('body').innerHTML = '<div class="main-cont"><div id = "main-screen" class = "main-screen"></div></div>';
   let mainScreen = document.querySelector('.main-screen');
   let bags = Math.round(Math.random()*level);
   for (let i = 0 ; i < level ; i++){
