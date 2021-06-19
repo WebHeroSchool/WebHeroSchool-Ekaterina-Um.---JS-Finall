@@ -100,12 +100,20 @@ input:checked + label:after {
   transition-duration: .3s;
   box-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
+.main-cont{
+  position: relative;
+  height: 100%;
+}
 .main-screen{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   width: 702px;
-  margin: auto;
 }
 .card{
   background-color: transparent;
@@ -176,6 +184,20 @@ input:checked + label:after {
     height: 680px;
     background-position: 96% bottom, 67% 240px;
   }
+  .main-screen{
+    max-width: 475px;
+  }
+  .card{
+    width: 150px;
+    height: 232px;
+    margin-bottom: 12px;
+  }
+  .card-front{
+    background-size: 100%;
+  }
+  .card-back{
+    background-size: 100%;
+  }
 }
 @media (min-width: 960px) and (max-width: 1023px){
   .main{
@@ -186,6 +208,20 @@ input:checked + label:after {
   }
   .menu{
     margin-bottom: 100px;
+  }
+  .main-screen{
+    max-width: 475px;
+  }
+  .card{
+    width: 150px;
+    height: 232px;
+    margin-bottom: 12px;
+  }
+  .card-front{
+    background-size: 100%;
+  }
+  .card-back{
+    background-size: 100%;
   }
 }
 @media (min-width: 768px) and (max-width: 959px){
@@ -216,6 +252,20 @@ input:checked + label:after {
     font-size: 24px;
     padding-top: 20px;
     padding-left: 60px;
+  }
+  .main-screen{
+    max-width: 475px;
+  }
+  .card{
+    width: 150px;
+    height: 232px;
+    margin-bottom: 12px;
+  }
+  .card-front{
+    background-size: 100%;
+  }
+  .card-back{
+    background-size: 100%;
   }
 }
 @media (min-width: 640px) and (max-width: 767px){
@@ -302,11 +352,11 @@ input:checked + label:after {
     padding-left: 40px;
   }
   .main-screen{
-    max-width: 475px;
+    max-width: 363px;
   }
   .card{
-    width: 150px;
-    height: 232px;
+    width: 105px;
+    height: 160px;
     margin-bottom: 12px;
   }
   .card-front{
@@ -358,8 +408,8 @@ input:checked + label:after {
     max-width: 315px;
   }
   .card{
-    width: 95px;
-    height: 147px;
+    width: 90px;
+    height: 140px;
     margin-bottom: 12px;
   }
   .card-front{
