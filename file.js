@@ -27,7 +27,7 @@ let createCard = (i, bags) => {
       else window.location.reload();
   	}
   })();
-   card.addEventListener('click', flipCard);
+ card.addEventListener('click', flipCard);
 }
 
 // раздача карт
